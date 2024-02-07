@@ -1,0 +1,7 @@
+- 👋 Hi, I’m @Mystrix7
+- 👀 I’m interested in front-end web development
+- 🌱 I’m currently learning javascript
+- 💞️ I’m looking to collaborate on a full stack web application
+- 📫 Reach me at @r4v_e_n_g_e_ on instagram
+- 😄 Pronouns: He/Him
+- ⚡ Fun fact: I like coding
