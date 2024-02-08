@@ -1,0 +1,142 @@
+
+body {
+    font-family: monospace;
+    font-weight: normal;
+    font-size: 1em;
+    background: linear-gradient(to right, #bb0303, #770000, #bb0303); /* Color gradient background */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    margin: 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#header1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.navbar {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.navbar:hover {
+    background-color: #555;
+}
+
+/* Animation for nav buttons */
+.navbar {
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #c12b2b;
+    transition: height 0.3s ease;
+    z-index: -1;
+}
+
+.navbar:hover::before {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Set container height to fill the viewport */
+    padding-top: 20px; /* Add space from the header */
+}
+
+.content {
+    flex: 1; /* Let the content fill the remaining vertical space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px; /* Add space between header and cards */
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between; /* Align cards */
+}
+
+.card {
+    width: calc(33.33% - 20px); /* Adjust the width of each card */
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    width: 100%;
+    margin: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1 1 300px;
+    margin-bottom: 20px;
+}
+
+.footer-section h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
